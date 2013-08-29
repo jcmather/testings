@@ -10,9 +10,6 @@
             http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <metrics:metric-registry id="registry" name="springMetrics" />
-    <metrics:annotation-driven metric-registry="registry" />
     <metrics:reporter type="console" metric-registry="registry" period="1m" />
-
-    <context:component-scan base-package="com.rgm" />
 
 </beans>
